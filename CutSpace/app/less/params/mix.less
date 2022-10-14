@@ -1,0 +1,54 @@
+.bg(@url: '', @color: transparent, @repeat: no-repeat, @x: center, @y: center) {
+    background: @color url("@{url}") @repeat @x @y;
+    background-size:cover;
+}
+.xl(@name, @value){
+    @media (max-width:1200px){
+        @{name} : @value;
+    }
+}
+.lg(@name, @value){
+    @media (max-width:1199px){
+        @{name} : @value;
+    }
+}
+.md(@name, @value){
+    @media (max-width:991px){
+        @{name} : @value;
+    }
+}
+.sm(@name, @value){
+    @media (max-width:767px){
+        @{name} : @value;
+    }
+}
+.xl-block(@content){
+    @media (max-width:1200px){
+        @content();
+    }
+}
+.lg-block(@content){
+    @media (max-width:1199px){
+        @content();
+    }
+}
+.md-block(@content){
+    @media (max-width:991px){
+        @content();
+    }
+}
+.sm-block(@content){
+    @media (max-width:767px){
+        @content();
+    }
+}
+.media-block(@content, @size){
+    @media (max-width:@size){
+        @content();
+    }
+}
+.media(@name, @value,@size){
+    @media (max-width:@size){
+        @{name} : @value;
+    }
+}

@@ -1,0 +1,94 @@
+main{
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    .card{
+        position: relative;
+        img{
+            .md-block({
+                width: 100%;
+              height: 500px;
+            })
+        }
+    };
+    .car{
+        position: absolute;
+        bottom: 90px;
+        right: 100px;
+        background-color: white;
+        background: #FFFFFF;
+        box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+        border-radius: 15px; 
+        padding: 10px 0px;
+        .md-block({
+          position: absolute;
+          right: 0;
+        }); 
+        .sm-block({
+            position: absolute;
+            right: 15px;
+        });
+        h5{
+            font-family: "Lato", "san-serif";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.800000011920929px;
+            padding: 0px 30px;
+        }
+        p{
+            font-family: "Lato", "san-serif";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 1.149999976158142px;
+            padding: 0px 30px;
+        }
+        .var{
+            position: absolute;
+            top: 30px;
+            padding-left: 5px;
+        }      
+    };
+    .box{
+        position: absolute;
+        top: 100px;
+        .md-block({
+          text-align: center;
+          margin-top: 0px;
+        });
+        h2{
+            font-family: "Lato", "san-serif";
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 62px;
+            letter-spacing: 0.800000011920929px;
+            color: #323232;
+        }
+        p{
+            font-family: "Lato", "san-serif";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 1.149999976158142px;
+            color: #323232;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        a{
+            font-family: "Lato", "san-serif";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 18px 39px;
+            background: #F78434;
+            border-radius: 29px;
+            color: white;
+            &:hover{
+                background-color: black;
+                cursor: pointer;
+                transition: 1s;
+            }
+        }
+    };
+}
